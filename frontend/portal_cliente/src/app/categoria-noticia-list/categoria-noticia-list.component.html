@@ -1,0 +1,21 @@
+<div class="container mt-5">
+    <h1 class="text-center text-primary">Notícias da Categoria: {{ categoriaNome }}</h1>
+    <p class="text-center text-muted" style="font-size: 1rem; font-style: italic; margin-top: 0.5rem;">
+      {{ categoriaDesc }}
+    </p>
+    <div *ngIf="noticias.length > 0; else noNoticias" class="row">
+      <div *ngFor="let noticia of noticias" class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">{{ noticia.titulo }}</h5>
+            <p class="card-text text-muted">{{ noticia.resumo }}</p>
+            <a href="/noticia/{{ noticia.id }}" class="btn btn-primary">Ler mais</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ng-template #noNoticias>
+      <p class="text-center text-muted">Nenhuma notícia encontrada para esta categoria.</p>
+    </ng-template>
+  </div>
+  

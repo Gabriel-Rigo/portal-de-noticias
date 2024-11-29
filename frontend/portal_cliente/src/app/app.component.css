@@ -1,0 +1,86 @@
+/* Título do Portal */
+.portal-title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+  }
+  
+  /* Subtítulo */
+  .lead {
+    font-size: 1.2rem;
+    color: #e9ff21;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  /* Título da seção de categorias */
+  .category-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #343a40;
+    margin-bottom: 25px;
+  }
+  
+  /* Texto de descrição das categorias */
+  .category-description {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 40px;
+  }
+  
+  /* Estilo para os cards de categoria */
+  .category-card {
+    background-color: #ffffff;
+    border-radius: 1.25rem;
+  }
+  
+  .category-item {
+    background-color: #ffffff;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 1rem;
+  }
+  
+  .category-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo do botão "Ver artigos" */
+  .btn-outline-primary {
+    border-radius: 25px;
+    padding: 12px 25px;
+    font-size: 1rem;
+    color: #007bff;
+    border: 2px solid #007bff;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #081017;
+    color: white;
+    border-color: #007bff;
+  }
+  
+  /* Responsividade para dispositivos móveis */
+  @media (max-width: 768px) {
+    .portal-title {
+      font-size: 2.5rem;
+    }
+  
+    .category-title {
+      font-size: 1.6rem;
+    }
+  
+    .category-description {
+      font-size: 0.9rem;
+    }
+  
+    .btn-outline-primary {
+      font-size: 0.9rem;
+      padding: 10px 20px;
+    }
+  }
+  

@@ -1,0 +1,42 @@
+<div class="container mt-5">
+  <div class="text-center mb-5">
+    <a routerLink="/noticias">
+      <h1 class="display-3 fw-bold portal-title">Portal de Jogos</h1>
+    </a>
+    <p class="lead text-muted mb-4">
+      Fique por dentro do que acontece no mundo dos games.
+    </p>
+  </div>
+  
+  <!-- Categorias -->
+  <div class="row justify-content-center mt-5">
+    <div class="col-md-10 col-lg-8">
+      <div class="card category-card shadow-lg border-0 rounded-4">
+        <div class="card-body text-center">
+          <h5 class="text-dark mb-4 category-title">Explore nossas categorias</h5>
+          <p class="text-muted mb-5 category-description">Escolha uma categoria e descubra artigos interessantes.</p>
+          
+          <!-- Lista de Categorias -->
+          <div class="row mt-4 g-4">
+            <div *ngFor="let categoria of categorias" class="col-6 col-md-4 col-lg-3">
+              <div class="card category-item shadow-lg border-0 rounded-3">
+                <div class="card-body p-4 text-center">
+                  <h6 class="card-title text-primary mb-3">{{ categoria.nome }}</h6>
+                  <a [routerLink]="['/categoria', categoria.id, 'noticias']" class="btn btn-outline-primary btn-sm rounded-pill">
+                    Ver artigos
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fim da Lista de Categorias -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Placeholder para o conteúdo dinâmico -->
+  <div class="container mt-5">
+    <router-outlet></router-outlet>
+  </div>
+</div>

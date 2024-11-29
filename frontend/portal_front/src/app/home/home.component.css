@@ -1,0 +1,44 @@
+/* Garantir que a imagem de fundo cubra toda a tela */
+.admin-home-container {
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 20px;
+  margin: 0;
+  background-image: url('https://cdn.pixabay.com/photo/2017/08/26/10/47/businessman-2682712_1280.jpg'); /* URL da imagem */
+  background-size: cover; /* A imagem cobre toda a área */
+  background-position: center; /* A imagem é centralizada */
+  background-repeat: no-repeat; /* A imagem não vai se repetir */
+  background-attachment: fixed; /* Imagem fixa ao rolar */
+  min-height: 100vh; /* Garantir que o fundo cubra toda a altura da tela */
+  border-radius: 8px;
+}
+
+
+/* Estilos Gerais */
+.admin-home-container {
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.admin-header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #07609b;
+  color: #fff;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.admin-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.admin-header p {
+  margin: 5px 0;
+  font-size: 1.2rem;
+}
+
